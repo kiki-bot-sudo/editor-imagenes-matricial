@@ -9,7 +9,7 @@ const { PNG } = require('pngjs');
 const fs = require('fs');
 const path = require('path');
 
-// Importar funciones auxiliares (puedes usarlas)
+// Importar funciones de utilidadEs 
 const {
   crearMatrizVacia,
   validarMatriz,
