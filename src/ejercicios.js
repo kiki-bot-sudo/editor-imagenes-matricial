@@ -198,6 +198,7 @@ function convertirEscalaGrises(matriz) {
 // SECCIÓN 3: TRANSFORMACIONES GEOMÉTRICAS (30 puntos)
 // Aplicar operaciones matriciales para transformar
 // ============================================
+//COMPLETADO JEJJEJEJE
 
 function voltearHorizontal(matriz) {
   const dims = obtenerDimensiones(matriz);
