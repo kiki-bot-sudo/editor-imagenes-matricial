@@ -243,7 +243,7 @@ function rotar90Grados(matriz) {
 // SECCIÓN 4: FILTROS AVANZADOS (25 puntos)
 // Operaciones más complejas
 // ============================================
-
+// COMPLETADO JEJEJEJEJEJE
 function mezclarImagenes(matriz1, matriz2, factor) {
   // 1. Verificar que tengan las mismas dimensiones
   const dims1 = obtenerDimensiones(matriz1);
