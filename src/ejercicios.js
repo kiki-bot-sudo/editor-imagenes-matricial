@@ -140,7 +140,7 @@ function obtenerDimensionesImagen(rutaImagen) {
 // SECCIÓN 2: OPERACIONES BÁSICAS (25 puntos)
 // Aplicar álgebra matricial a píxeles
 // ============================================
-
+// COMPLETADO JEJE
 function ajustarBrillo(matriz, factor) {
   // 1. Crear matriz resultado
   const resultado = copiarMatriz(matriz);
