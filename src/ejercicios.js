@@ -33,7 +33,7 @@ const {
 // SECCIÓN 1: FUNDAMENTOS (20 puntos)
 // Conversión entre imágenes y matrices
 // ============================================
-
+// COMPLETADO JEJEJEJE
 function imagenAMatriz(rutaImagen) {
   // 1. Leer el archivo PNG
   const buffer = fs.readFileSync(rutaImagen);
