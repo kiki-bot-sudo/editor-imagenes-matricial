@@ -1,107 +1,81 @@
-# Editor de Imágenes con Álgebra Matricial
+# Respuestas Determinantes
 
-**Fundamentos de Álgebra - Unidad III: Álgebra Lineal Aplicada**  
-Tecnológico de Software
+## Ejercicio 1: Determinantes 2×2
 
----
+Matriz A = (5  2 / 3  1)
+- det(A) = 5×1 - 2×3 = 5 - 6 = **-1**
 
-## Objetivo
+Matriz B = (-1  4 / 2  -8)
+- det(B) = -1×(-8) - 4×2 = 8 - 8 = **0**
 
-Manipular imágenes PNG aplicando operaciones matriciales del álgebra lineal.
+Matriz C = (6  9 / 2  3)
+- det(C) = 6×3 - 9×2 = 18 - 18 = **0**
 
----
-
-## Instrucciones
-
-### 1. Clonar el repositorio
-```bash
-git clone https://github.com/TU-USUARIO/editor-imagenes-matricial.git
-cd editor-imagenes-matricial
-npm install
-```
-
-### 2. Completar los ejercicios
-- Abre el archivo `src/ejercicios.js`
-- Completa cada función donde dice `// TODO:`
-- **NO modifiques** los archivos `utilidades.js`, `matriz.js` ni los tests
-
-### 3. Probar tu código
-```bash
-npm test
-```
-
-### 4. Guardar tus cambios
-```bash
-git add src/ejercicios.js
-git commit -m "Completar ejercicios de la sección X"
-git push origin main
-```
-
-### 5. Ver tu calificación
-- Ve a tu repositorio en GitHub
-- Click en la pestaña **Actions**
-- Tu calificación aparecerá en los resultados
+Matriz D = (0  5 / -5  0)
+- det(D) = 0×0 - 5×(-5) = 0 + 25 = **25**
 
 ---
 
-## Sistema de Calificación
+## Ejercicio 2: Regla de Sarrus
 
-| Sección | Puntos |
-|---------|--------|
-| 1. Commits bien documentados | 20 pts |
-| 2. README actualizado y personalizado | 25 pts |
-| 3. Editor funcional | 30 pts |
-| 4. Funciones bien documentadas | 25 pts |
-| **TOTAL** | **100 pts** |
+Matriz E = (1  2  3 / 0  1  4 / 5  6  0)
 
----
+det(E) = (1×1×0) + (2×4×5) + (3×0×6) - (3×1×5) - (1×4×6) - (2×0×0)
+- det(E) = 0 + 40 + 0 - 15 - 24 - 0 = **1**
 
-## Estructura del Proyecto
+Matriz F = (2  -1  3 / 1  4  0 / 3  2  -2)
 
-```
-src/
-├── ejercicios.js          ← COMPLETA ESTE ARCHIVO
-├── ejercicios.test.js     ← NO MODIFICAR
-├── utilidades.js          ← NO MODIFICAR (funciones auxiliares)
-└── matriz.js              ← NO MODIFICAR (operaciones matriciales)
-
-imagenes/
-├── entrada/               ← Imágenes de prueba
-└── salida/                ← Resultados generados
-
-guias/
-├── GUIA_ESTUDIANTES.md    ← Ayuda detallada
-├── GUIA_INSTRUCTOR.md     ← Soluciones (solo instructor)
-└── CONCEPTOS_ALGEBRA.md   ← Teoría de álgebra lineal
-```
+det(F) = (2×4×(-2)) + (-1×0×3) + (3×1×2) - (3×4×3) - (2×0×2) - (-1×1×(-2))
+- det(F) = -16 + 0 + 6 - 36 - 0 - 2 = **-48**
 
 ---
 
-## Recursos
+## Ejercicio 3: Método de Cofactores
 
-- **Guía Estudiantes:** `guias/GUIA_ESTUDIANTES.md`
-- **Conceptos Álgebra:** `guias/CONCEPTOS_ALGEBRA.md`
-- **Documentación pngjs:** [npmjs.com/package/pngjs](https://www.npmjs.com/package/pngjs)
+Matriz G = (1  0  2 / -1  3  1 / 2  0  1)
 
----
-
-## Reglas Importantes
-
-1. ✅ Solo modifica `src/ejercicios.js`
-2. ❌ No modifiques los archivos de tests
-3. ❌ No modifiques `utilidades.js` ni `matriz.js`
-4. ✅ Puedes hacer múltiples commits
-5. ✅ Todos los tests deben pasar para obtener puntos
+Expandiendo por columna 2 (tiene ceros):
+- det(G) = 3 × det(1  2 / 2  1) = 3 × (1 - 4) = 3 × (-3) = **-9**
 
 ---
 
-## ¿Necesitas Ayuda?
+## Ejercicio 4: Verificar Propiedades
 
-1. Lee `guias/GUIA_ESTUDIANTES.md`
-2. Consulta `guias/CONCEPTOS_ALGEBRA.md`
-3. Pregunta a tus compañeros
-4. Contacta al profesor: jorge.pedroza@tecdesoftware.edu.mx
+A = (2  1 / 1  3)
+B = (1  2 / 3  1)
+
+**Propiedad 1: det(AB) = det(A) × det(B)**
+
+det(A) = 2×3 - 1×1 = 6 - 1 = 5
+det(B) = 1×1 - 2×3 = 1 - 6 = -5
+det(A) × det(B) = 5 × (-5) = -25
+
+AB = (5  5 / 10  5)
+det(AB) = 5×5 - 5×10 = 25 - 50 = -25 ✓
+
+**Propiedad 2: det(Aᵀ) = det(A)**
+
+Aᵀ = (2  1 / 1  3)
+det(Aᵀ) = 2×3 - 1×1 = 5 = det(A) ✓
 
 ---
 
-**¡Éxito en tu proyecto!**
+## Ejercicio 5: Aplicación Geométrica
+
+Vectores: u = (3, 2) y v = (1, 4)
+
+**a) Área del paralelogramo**
+- Área = |det| = |3×4 - 1×2| = |12 - 2| = **10**
+
+**b) Si intercambias los vectores**
+- det(v, u) = 1×2 - 3×4 = 2 - 12 = -10
+- |det| = |-10| = **10** (misma área, signo opuesto)
+
+**c) ¿Qué significa el signo?**
+- (+) = vectores giran contrahorario
+- (-) = vectores giran horario
+- El signo indica la orientación del paralelogramo
+
+---
+
+
