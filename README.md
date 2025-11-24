@@ -1,2 +1,2 @@
-#Documentacion 3 imagenes binarias
-##Matrices generadas 
+# Documentacion 3 imagenes binarias
+## Matrices generadas 
