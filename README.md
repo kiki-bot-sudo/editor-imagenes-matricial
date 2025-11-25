@@ -341,7 +341,7 @@ Para que los números se vean como colores, usé el formato condicional. Aquí t
 3. Agrego regla: Si el valor de la celda es igual a 0, formato de relleno negro
 4. Agrego otra regla: Si el valor es igual a 1, formato de relleno amarillo
 
-### Para la R (0=blanco, 1=azul, 2=negro):
+### Para el among us(0=blanco, 1=azul, 2=negro):
 
 1. Selecciono el rango
 2. Primera regla: valor = 0 → fondo blanco
@@ -463,4 +463,4 @@ Enrique Zavala Martinez
 
 ## Fecha
 
-Noviembre 2025
+ 24 Noviembre 2025
